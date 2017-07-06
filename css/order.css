@@ -1,0 +1,59 @@
+.zixuan,.jixuan,.qingkong{
+    background-color: rgba(0,0,0,0.2);
+    color: #d0ddd6;
+    display: inline-block;
+    height: 35px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    width: 25%;
+    border-radius: 4px;
+}
+.buttonbox{
+    text-align: center;
+    margin: 10px auto;
+
+}
+.bar.bar-positive {
+    border: none;
+    background-color: #060f0c;
+    background-image: none;
+}
+.bar.bar-positive.bar-footer {
+    background-image: none;
+}
+.dingdanheader{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background:url("../img/order/chupiaokou.png") no-repeat 0;
+    background-size: cover;
+}
+.dingdanfooter{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background:url("../img/order/dingdanfooter.png") no-repeat 0;
+    background-size: cover;
+}
+.dingdanbody{
+    padding: 0 20px;
+    background:url("../img/order/dingdanbg.png") repeat-y 0;
+    background-size: 100%;
+}
+
+.contentbody{
+    background: url("../img/k3img/gamebg.jpg");
+}
+.contentbody h4{
+    width: 100%;
+    color:#d0ddd6;
+    text-align: center;
+}
+.numberlist{
+    border-top: 1px #e1e1e1 dashed;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+}

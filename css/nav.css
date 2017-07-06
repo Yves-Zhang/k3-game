@@ -1,0 +1,34 @@
+.bar.bar-assertive{
+    border-top: 1px #cccccc solid;
+    border-color: #ededed;
+    background-color: #fff;
+    background-image: none;
+    color: #999999;
+}
+.bar.bar-assertive.bar-footer{
+    background-image: none;
+    height: 48px;
+}
+
+.nav div{
+    text-align: center;
+    display: inline-block;
+    margin:0 10%;
+    width: 50px
+}
+.nav img{
+    padding: 0;
+    width: 25px;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto
+}
+.nav span{
+    margin-top: 0;
+    font-size: 9px;
+    line-height: 8px
+}
+.navActive{
+    color:#f12a4b;
+}

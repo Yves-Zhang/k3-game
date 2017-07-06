@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="css/regist.css"/>
+<ion-header-bar align-title="left" class="bar-positive header">
+    <div class="buttons" on-tap="go()">
+        <button class="button arrleft" style="background-color: inherit!important;border: none!important;">
+            <i class="icon ion-arrow-left-a" style="color: #fff"></i>
+        </button>
+    </div>
+    <h1 class="title">注册</h1>
+</ion-header-bar>
+<ion-content class="contentbody">
+        <div class="list">
+            <div class="item item-divider">
+            </div>
+            <div class="inputbox">
+                <div style="width: 20%;display: inline-table">手机号</div>
+                <input type="text" style="display: inline-table;margin-top: -5px;width: 70%" placeholder="请输入手机号" ng-model="$parent.phone" />{{name}}
+            </div>
+            <div class="inputbox">
+                <div style="width: 20%;display: inline-table">密码</div>
+                <input type="password" style="display: inline-table;margin-top: -5px;width: 70%" placeholder="请设置密码" ng-model="$parent.password" />{{name}}
+            </div>
+            <div class="verificationCode">
+                <div class="title">验证码</div>
+                <input type="text" style="display: inline-table;margin-top: -5px;width: 50%;" placeholder="请输入验证码" ng-model="$parent.verificationCode"/>
+                <div class="getVerificationCode" on-tap="getVcode()">获取验证码</div>
+            </div>
+            <div class="inputbox">
+                <div style="width: 20%;display: inline-table">邀请码</div>
+                <input type="text" style="display: inline-table;margin-top: -5px;width: 70%" placeholder="没有可不填" ng-model="$parent.inviteCode" />{{name}}
+            </div>
+            <div class="item item-divider">
+            </div>
+        </div>
+    <mybutton text="注册" bg-color="#d91d36" color="#fff" on-tap="regist()"></mybutton>
+</ion-content>
+

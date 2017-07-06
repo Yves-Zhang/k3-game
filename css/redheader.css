@@ -1,0 +1,13 @@
+.header{
+    background-color: #d91d36;
+}
+.header .title{
+    color: #fff;
+}
+.header i{
+    color: #fff;
+}
+.bar {
+    border: none;
+    background-image: none;
+}

@@ -1,0 +1,20 @@
+myApp.controller('login',["$scope","$state","myAjax",function($scope,$state,myAjax){
+    $scope.go=function(url){
+        $state.go(url)
+    }
+    //登录
+    $scope.login=function(){
+        $scope.sendMsgtogetVCode={
+            "apiCode":"10000",
+            "params":{
+                "phone":$scope.phone,
+                "password":$scope.password
+            }
+        }
+        myAjax.send("http://112.74.45.194:8080/api",$scope.sendMsgtogetVCode,function(){
+            console.log(arguments[0])
+        },function(){
+            console.log(arguments[0])
+        })
+    }
+}])

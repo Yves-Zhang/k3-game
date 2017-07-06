@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="css/order.css" type="text/css"/>
+<script src="js/style.js"></script>
+<ion-header-bar align-title="left" class="bar bar-positive">
+    <div class="buttons">
+        <button class="button arrleft" on-tap="go('gamepage')" style="background-color: inherit!important;border: none!important;"><i class="icon ion-arrow-left-a"></i></button>
+    </div>
+    <h1 class="title">选号订单</h1>
+</ion-header-bar>
+
+
+<ion-content style="overflow: hidden" class="contentbody" overflow-scroll="false">
+    <h4>距{{indexIssue}}期截止：{{showtime}}</h4>
+    <div class="buttons buttonbox">
+        <div class="zixuan" on-tap="zixuan()">+ 自选号码</div>
+        <div class="jixuan" on-tap="jixuan()">+ 机选一注</div>
+        <div class="qingkong" on-tap="qingkong()">- 清空列表</div>
+    </div>
+    <div style="width: 90%;margin: 0 auto">
+        <div class="dingdanheader"></div>
+        <ion-scroll zooming="false" direction="y" style="width: 100%;height: 300px" class="orderscroll" overflow-scroll="false">
+            <div class="dingdanbody" data-ng-repeat="v in showOrdernumber">
+                <div class="numberlist" style="color: #d22038;font-weight: bold;font-size: 16px;font-family: arial;height: 50px;line-height: 50px">
+                    <span style="height: 100%;display: inline-block;vertical-align: middle"></span>
+                    <img src="img/order/del.png" alt=""  style="width: 7%;vertical-align: middle" on-tap="del($index)"/>
+                        {{v}}
+                    </span>
+                </div>
+            </div>
+            <div class="dingdanfooter"></div>
+        </ion-scroll>
+    </div>
+</ion-content>
+
+<ion-footer-bar align-title="left" class="bar bar-positive">
+    <h1 class="title text-center">
+        共{{zhushu}}注;总计：{{jine}}元
+    </h1>
+    <div class="buttons">
+        <button style="background-color: #eab909;border: none;font-size: 1.2em" class="button">提交</button>
+    </div>
+</ion-footer-bar>
+
+
+
+
+
+
+
+
+
+
+

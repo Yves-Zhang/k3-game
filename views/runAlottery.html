@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="css/redheader.css" type="text/css"/>
+<ion-header-bar align-title="left" class="bar bar-header header" style="border-image: none">
+    <h1 class="title">开奖公告</h1>
+</ion-header-bar>
+<ion-content padding="true">
+    <div style="width: 100%;border-bottom: 1px #ededed solid;padding: 10px 0;">
+        <div style="display: inline-block;width: 80%;height: 100%;">
+            <div>
+                <h4 style="display: inline;font-size: 1.2em;font-weight: bold">快3</h4>
+                <p style="display: inline;color:#999999">第<span style="color:#d91d36">{{indexRunalottery.issue}}</span>期 2016-03-20 10:08</p>
+            </div>
+            <div>
+                <div style="display: inline-block;background-color: #7ab304;width: 50%;height: auto;text-align: center;border-radius: 16px;margin: 10px 0;padding: 5px 0;">
+                    <span style="height: 100%;line-height: 100%;vertical-align: middle;width: 0px"></span>
+                    <img ng-src="img/k3img/dice{{indexRunalottery.drawNumber[0]}}.png" alt="" style="width: 20%;height: auto;vertical-align: middle"/>
+                    <img ng-src="img/k3img/dice{{indexRunalottery.drawNumber[2]}}.png" alt="" style="width: 20%;height: auto;vertical-align: middle"/>
+                    <img ng-src="img/k3img/dice{{indexRunalottery.drawNumber[4]}}.png" alt="" style="width: 20%;height: auto;vertical-align: middle"/>
+                </div>
+                <div style="display: inline-block">
+                    和值：{{sumNumber()}}
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;width: 15%;height: 100%">
+            <img src="img/icon_right.png" alt="" style="float: right"/>
+        </div>
+    </div>
+</ion-content>

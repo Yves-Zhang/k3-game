@@ -1,0 +1,46 @@
+.bar.bar-positive{
+    border-color: #ededed;
+    background-color: #d91d36;
+    background-image: none;
+    color: #fff;
+}
+.bar.bar-positive .title{
+    color: #fff;
+}
+.body{
+    width: 100%;
+    height: auto;
+ }
+.mypading{
+    padding: 0 10px;
+}
+.item-divider{
+     min-height: 15px;
+ }
+.verificationCode{
+    border-bottom: 1px #ededed solid;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    padding: 0;
+    padding-left: 10px
+}
+.verificationCode .title{
+    width: 20%;
+    display: inline-table;
+}
+.getVerificationCode{
+    width: 25%;
+    display: inline-table;
+    float: right;
+    border-left: 1px #ededed solid;
+    text-align: center
+}
+.inputbox{
+    border-bottom: 1px #ededed solid;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+}

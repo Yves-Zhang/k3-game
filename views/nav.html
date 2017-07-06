@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="css/nav.css" type="text/css"/>
+<div data-ui-view="main"></div>
+<ion-footer-bar class="bar-assertive bar-footer">
+    <div style="text-align: center;width: 100%" class="nav">
+        <div ng-class={'navActive':nav==1,'':norm!=1} style="margin-left: 0" on-tap="go('default')">
+            <img ng-src="img/navbar/home{{on[0]}}.png" alt=""/>
+            <span>购彩大厅</span>
+        </div>
+        <div ng-class={'navActive':nav==2,'':norm!=2} on-tap="go('default.runAlottery')">
+            <img ng-src="img/navbar/runAlottery{{on[1]}}.png" alt=""/>
+            <span>开奖</span>
+        </div>
+        <div ng-class={'navActive':nav==3,'':norm!=3} style="margin-right: 0" on-tap="go('default.user')">
+            <img ng-src="img/navbar/mine{{on[2]}}.png" alt=""/>
+            <span>我的</span>
+        </div>
+    </div>
+</ion-footer-bar>
+
+

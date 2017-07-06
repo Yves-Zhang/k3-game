@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="css/gamepage.css" type="text/css"/>
+<script src="js/style.js"></script>
+<ion-header-bar align-title="left" class="bar-positive">
+    <div class="buttons">
+        <button class="button arrleft" on-tap="gohome()" style="background-color: inherit!important;border: none!important;"><i class="icon ion-arrow-left-a"></i></button>
+    </div>
+    <h1 class="title">{{gamename}}</h1>
+</ion-header-bar>
+<ion-content style="overflow: hidden" class="contentbody">
+    <!--随机选号骰子动画层-->
+    <!--<div class="randomanimate" ng-if="randomanimatebegin" id="randomanimate">-->
+        <!--<img ng-src={{randomimgOne}} alt="" class="randomimg"/>-->
+        <!--<img ng-src={{randomimgTwo}} alt="" class="randomimg"/>-->
+        <!--<img ng-src={{randomimgThree}} alt="" class="randomimg"/>-->
+    <!--</div>-->
+    <!--随机选号骰子动画层结束-->
+    <ion-scroll zooming="false" direction="y" style="width: 100%;">
+        <div>
+            <!--开奖期号，开奖号码，截至投注-->
+            <div class="game_display">
+                <div class="leftdisplay">
+                    <h4 on-tap="aaa()">{{indexIssue-1}}期开奖：{{indexnum}}</h4>
+                    <img ng-src={{awardOne}} alt=""/>
+                    <img ng-src={{awardTwo}} alt=""/>
+                    <img ng-src={{awardThree}} alt=""/>
+                </div>
+                <div class="rightdisplay">
+                    <h4>距{{indexIssue}}期截止：</h4>
+                    <h2>{{showtime}}</h2>
+                </div>
+            </div>
+            <!--开奖期号，开奖号码，截至投注功能 结束-->
+            <div class="body">
+                <!--摇一摇-->
+                <div class="shake">
+                    <img src="img/k3img/shake.png" alt="" on-tap="randomnumber()"/>
+                </div>
+                <!--摇一摇结束-->
+                <!--第一组号码-->
+                <p class="title">{{single[0].title}}</p>
+                <table style="width:100%;" cellspacing="10px" class="k3numberbox">
+                    <tr>
+                        <td style="width:14.3%;" data-ng-repeat="nub in single[0].number">
+                            <div class="k3number" on-tap="numberChioce($index,0)" ng-class={'actived':nub==instyleone,'k3number':nub!=instyleone}>
+                                {{nub}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--第一组号码结束-->
+
+                <!--第二组号码-->
+                <p class="title">{{single[1].title}}</p>
+                <table style="width:100%;" cellspacing="10px" class="k3numberbox">
+                    <tr>
+                        <td style="width:14.3%" data-ng-repeat="nub in single[1].number">
+                            <div class="k3number" on-tap="numberChioce($index,1)" ng-class={'actived':nub==instyletwo,'k3number':nub!=instyletwo}>
+                                {{nub}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--第二组号码结束-->
+
+                <!--第三组号码-->
+                <p class="title">{{single[2].title}}</p>
+                <table style="width:100%;" cellspacing="10px" class="k3numberbox">
+                    <tr>
+                        <td style="width:14.3%" data-ng-repeat="nub in single[2].number">
+                            <div class="k3number" on-tap="numberChioce($index,2)" ng-class={'actived':nub==instylethree,'k3number':nub!=instylethree}>
+                                {{nub}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--第三组号码结束-->
+            </div>
+        </div>
+    </ion-scroll>
+</ion-content>
+<ion-footer-bar align-title="left" class="bar-positive k3footer">
+    <div class="buttons">
+        <button style="background-color: #eab909;border: none;font-size: 1.2em" class="button" on-tap="clearnumber()">清空</button>
+    </div>
+    <h1 class="title">共1注，2元</h1>
+    <div class="buttons">
+        <button style="background-color: #eab909;border: none;font-size: 1.2em" class="button" on-tap="toorder()">确定</button>
+    </div>
+</ion-footer-bar>

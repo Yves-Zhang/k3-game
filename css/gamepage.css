@@ -1,0 +1,133 @@
+.bar.bar-positive {
+    border: none;
+    background-color: #060f0c;
+    background-image: none;
+}
+.bar.bar-positive.bar-footer {
+    background-image: none;
+}
+.game_display{
+    width: 100%;
+    height: 75px;
+    background:url("../img/k3img/timedownBg.jpg");
+    border-bottom: 1px #10281d solid;
+}
+.contentbody{
+    background: url("../img/k3img/gamebg.jpg");
+}
+.leftdisplay h4{
+    font-family: Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif, "Helvetica Neue", Helvetica;
+    color:rgb(207,220,215);
+}
+.leftdisplay img{
+    margin-top: -2px;
+    width: 18%;
+}
+.game_display .leftdisplay{
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-right: 1px #10281d solid;
+}
+.game_display .rightdisplay{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.game_display .rightdisplay h2,.game_display .rightdisplay h4{
+    font-family: Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif, "Helvetica Neue", Helvetica;
+    color:rgb(207,220,215);
+}
+.game_display .rightdisplay h2{
+    margin-top: 0;
+    line-height: 20px;
+}
+.body{
+    padding: 0 10px;
+}
+.body .shake{
+    overflow: hidden;
+    width: 100%;
+}
+.body img{
+    width: 63px;
+    height: 30px;
+    float: right;
+    margin:10px;
+}
+.k3number{
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(207,220,215);
+    margin: 0 auto;
+    width: 80%;
+    background-color: #3f875b;
+    border: 2px #679381 solid;
+    border-radius: 4px
+}
+.body .title{
+    font-family: "MicrosoftYaHei";
+    font-size: 13px;
+    color: rgb(207,220,215);
+}
+.k3numberbox{
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+.actived{
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: #eab80a;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #225a41;
+    border: 2px #eab80a solid;
+    border-radius: 4px
+}
+.randomimg{
+    width: 20%;
+    height: auto;
+}
+.randomanimate{
+    top: 0;
+    clear:both;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20%;
+}
+
+
+
+
+
+/*媒体查询适配手机尺寸*/
+/*iphone6p*/
+@media screen and (max-width: 414px){
+
+}
+/*iphone6*/
+@media screen and (max-width: 375px){
+
+}
+/*iphone5*/
+@media screen and (max-width: 350px){
+
+}
+/*android plus*/
+@media screen and (max-width: 435px){
+
+}
+/*android xhdpi*/
+@media screen and (max-width: 360px){
+
+}

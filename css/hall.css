@@ -1,0 +1,63 @@
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.game_all{
+    width: 90%;
+    margin: 0 auto;
+    padding: 6% 5px;
+    border-bottom: #ededed 1px solid;
+}
+.game_box{
+    overflow: hidden;
+
+}
+.game_all img{
+    width: 18%;
+    float: left;
+}
+.game_text{
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.game_all .game_name{
+    font-size: 17px;
+    font-weight: bold;
+    color: #464646;
+}
+.game_all p{
+    font-size: 15px;
+    color: #999999;
+}
+
+
+
+
+
+
+
+
+/*媒体查询适配手机尺寸*/
+/*iphone6p*/
+@media screen and (max-width: 414px){
+
+}
+/*iphone6*/
+@media screen and (max-width: 375px){
+
+}
+/*iphone5*/
+@media screen and (max-width: 320px){
+
+}
+/*android plus*/
+@media screen and (max-width: 435px){
+
+}
+/*android xhdpi*/
+@media screen and (max-width: 360px){
+
+}
